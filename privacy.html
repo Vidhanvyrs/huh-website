@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Privacy Policy for Huh? Video Explainer." />
+    <meta name="theme-color" content="#eaff00" />
+    <title>Privacy Policy — Huh? Video Explainer</title>
+    <link rel="icon" href="/huh-logo.png" />
+    <link rel="stylesheet" href="/src/privacy.css" />
+  </head>
+  <body>
+    <header class="policy-header">
+      <a class="policy-brand" href="/" aria-label="Back to Huh? home">
+        <img src="/huh-logo.png" alt="" width="52" height="52" />
+        <span>HUH?</span>
+      </a>
+      <a class="back-link" href="/">← BACK TO LAUNCH</a>
+    </header>
+
+    <main class="policy-page">
+      <div class="policy-hero">
+        <p class="kicker">THE IMPORTANT STUFF // NO FINE-PRINT GAMES</p>
+        <h1>PRIVACY<br />POLICY.</h1>
+        <p class="effective-date">EFFECTIVE DATE: AUGUST 30, 2026</p>
+      </div>
+
+      <article class="policy-card">
+        <section>
+          <h2><span>01</span> INTRODUCTION</h2>
+          <p>This policy explains how Huh? — Video Explainer (the “Extension”) collects, uses, shares, stores, and deletes information when you use its YouTube explanation features.</p>
+        </section>
+
+        <section>
+          <h2><span>02</span> INFORMATION WE COLLECT</h2>
+          <ul>
+            <li><strong>Account data:</strong> Your email address, user ID, and authentication session data when you create or use an account. Supabase provides authentication and account storage.</li>
+            <li><strong>YouTube video data:</strong> When you click “Huh?” on a YouTube video, the Extension reads the current video ID and timestamp in your browser to identify the selected moment.</li>
+            <li><strong>Transcript context:</strong> After you click “Huh?”, the Extension requests available English captions from YouTube through your browser connection. It selects surrounding transcript text, normally about 60 seconds before and 15 seconds after the selected moment, and sends only that selected context to our backend hosted on Render.</li>
+            <li><strong>AI request data:</strong> The selected transcript text, including the confusing passage and its surrounding transcript context, is sent to the Google Gemini API with instructions for generating the explanation.</li>
+            <li><strong>Usage data:</strong> We store explanation counts, subscription status, and related timestamps to enforce trial and paid-plan limits.</li>
+            <li><strong>Payment references:</strong> Razorpay processes checkout details. We store Razorpay payment and order IDs, the purchased plan, and subscription dates. We do not receive or store full card, bank, or UPI credentials.</li>
+            <li><strong>Local settings:</strong> Obsidian vault preferences, authentication state, and a limited cache of recent explanations may be stored through Chrome storage on your device.</li>
+            <li><strong>Technical logs:</strong> Our backend may log timestamps, user or video identifiers, request outcomes, and error details for security, debugging, and service reliability.</li>
+          </ul>
+          <p class="callout">We do not continuously monitor your browsing history, track you across websites, or collect YouTube data until you use an Extension feature.</p>
+        </section>
+
+        <section>
+          <h2><span>03</span> HOW WE USE INFORMATION</h2>
+          <p>We use this information only to:</p>
+          <ul>
+            <li>Generate explanations and study material for the YouTube moment you select.</li>
+            <li>Authenticate accounts and maintain sessions.</li>
+            <li>Enforce trial, subscription, and rate limits.</li>
+            <li>Process and verify payments.</li>
+            <li>Save user-selected settings and recent results locally.</li>
+            <li>Prevent abuse, diagnose failures, and maintain the service.</li>
+          </ul>
+          <p><strong>We do not sell personal data or use it for personalized advertising, credit decisions, or unrelated profiling.</strong></p>
+        </section>
+
+        <section>
+          <h2><span>04</span> SERVICE PROVIDERS AND DATA SHARING</h2>
+          <p>We share data only as needed to provide, secure, or maintain the Extension:</p>
+          <ul>
+            <li><strong>Render:</strong> Hosts our backend and processes API requests, the selected surrounding transcript context, generated results, and application logs.</li>
+            <li><strong>Google Gemini API:</strong> Receives the selected transcript passage, surrounding transcript context, explanation level, and prompt instructions to generate an answer.</li>
+            <li><strong>Supabase:</strong> Provides account authentication and stores account, usage, subscription, and payment-reference records.</li>
+            <li><strong>Razorpay:</strong> Creates and verifies payment orders and processes checkout. Razorpay handles payment credentials under its own privacy policy.</li>
+            <li><strong>YouTube:</strong> The Extension requests captions for the video selected by the user through the YouTube page open in the browser.</li>
+          </ul>
+          <p>Google’s treatment of Gemini API inputs and outputs depends on the applicable service tier and is governed by the <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noreferrer">Gemini API Terms</a>.</p>
+          <p>We may also disclose information when required by law or when reasonably necessary to protect users, the Extension, or others from fraud, abuse, or security threats.</p>
+        </section>
+
+        <section>
+          <h2><span>05</span> STORAGE AND SECURITY</h2>
+          <p>User data is transmitted over HTTPS. Account and service data is stored in Supabase with access controls. Secrets used by the backend are not included in the Extension package.</p>
+          <p>The Extension processes the full caption response transiently in browser memory to select the nearby passage. The active Extension does not send the full transcript to our backend, and the backend does not store the selected transcript context in the application database.</p>
+          <p>Chrome storage remains on the user’s device or Chrome profile. Render service files are ephemeral and may be removed whenever the service restarts or redeploys.</p>
+          <p>No method of transmission or storage is completely secure. We use reasonable safeguards but cannot guarantee absolute security.</p>
+        </section>
+
+        <section>
+          <h2><span>06</span> DATA RETENTION</h2>
+          <ul>
+            <li><strong>Account data:</strong> Retained while the account is active. After a verified deletion request, we aim to delete the account and associated active records within 30 days.</li>
+            <li><strong>Usage and subscription data:</strong> Retained while the account is active to enforce limits and benefits. It is deleted with the account within 30 days of a verified deletion request.</li>
+            <li><strong>Payment-reference data:</strong> Payment and order IDs are retained while the account is active for fulfilment, replay prevention, support, and dispute handling. After a verified account-deletion request, these references are deleted within 30 days unless a longer period is required by law, fraud prevention, accounting, or an unresolved dispute.</li>
+            <li><strong>Server logs:</strong> Render currently retains application logs for up to 7 days on our Hobby plan. If our hosting plan changes, Render may retain them for up to 30 days.</li>
+            <li><strong>Transcript data:</strong> Full captions are used transiently in browser memory. The selected surrounding context is processed transiently by Render and Gemini to generate the requested result; we do not intentionally retain it after the request completes, except where portions may appear temporarily in server or provider security/error logs under their stated retention practices.</li>
+            <li><strong>Local data:</strong> Retained in Chrome storage until you clear the Extension’s data or uninstall it, subject to Chrome’s own synchronization behavior.</li>
+          </ul>
+          <p>Supabase, Razorpay, Google, YouTube, and Render may retain data independently under their own policies and legal obligations.</p>
+        </section>
+
+        <section>
+          <h2><span>07</span> YOUR CHOICES AND DELETION REQUESTS</h2>
+          <p>You can stop new collection by not using the Extension or by uninstalling it. You can clear locally stored data using Chrome’s extension or site-data controls.</p>
+          <p>To request account deletion, contact us from the email address associated with your account. We may ask you to verify ownership before deleting data.</p>
+        </section>
+
+        <section>
+          <h2><span>08</span> CHROME WEB STORE LIMITED USE DISCLOSURE</h2>
+          <p>Our use of information received from Chrome APIs complies with the <a href="https://developer.chrome.com/docs/webstore/program-policies/user-data-faq" target="_blank" rel="noreferrer">Chrome Web Store User Data Policy</a>, including its Limited Use requirements.</p>
+          <p>We use and transfer this information only to provide or improve the Extension’s disclosed, user-facing features and for permitted security, legal, and operational purposes.</p>
+          <p>We do not use or transfer this information for personalized advertising, unrelated profiling, or sale to data brokers. Humans do not read user data except with consent or where permitted for security, legal, or aggregated operations.</p>
+        </section>
+
+        <section>
+          <h2><span>09</span> CHANGES TO THIS POLICY</h2>
+          <p>We may update this policy when the Extension’s practices or service providers change. The effective date above identifies the latest version.</p>
+        </section>
+
+        <section>
+          <h2><span>10</span> CONTACT</h2>
+          <p>Questions and verified deletion requests can be sent to <a href="mailto:vidhanvyrs@gmail.com">vidhanvyrs@gmail.com</a>.</p>
+        </section>
+      </article>
+    </main>
+
+    <footer class="policy-footer">
+      <span>© 2026 HUH? VIDEO EXPLAINER</span>
+      <a href="/">BACK TO LAUNCH →</a>
+    </footer>
+  </body>
+</html>

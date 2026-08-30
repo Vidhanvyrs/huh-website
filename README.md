@@ -22,4 +22,6 @@ npm run build
 
 Deploy the generated `dist/` directory to any static host. The browser receives only the Supabase anon key. Row Level Security permits inserts but prevents public reads, updates, and deletes.
 
+The production build includes both the launch page and a first-party privacy policy at `/privacy.html`; no public repository link is required.
+
 Override the built-in launch target with `VITE_LAUNCH_AT` using any valid ISO-8601 timestamp. The countdown and displayed drop date are both derived from that one value.
