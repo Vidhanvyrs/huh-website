@@ -17,4 +17,7 @@ test('the privacy page contains the required disclosures and contact', async () 
     assert.match(privacyPage, /Google Gemini API/i);
     assert.match(privacyPage, /Data Retention/i);
     assert.match(privacyPage, /vidhanvyrs@gmail\.com/i);
+    assert.match(privacyPage, /10 explanations per account per day/i);
+    assert.match(privacyPage, /v1 beta does not offer paid checkout/i);
+    assert.doesNotMatch(privacyPage, /Razorpay/i);
 });
