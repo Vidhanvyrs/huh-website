@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Huh? turns confusing YouTube moments into clear, instant explanations. Join the launch waitlist." />
+    <meta name="theme-color" content="#eaff00" />
+    <meta property="og:title" content="Huh? Video Explainer — launching soon" />
+    <meta property="og:description" content="Pause. Ask. Understand. Join the Huh? launch waitlist." />
+    <title>Huh? Video Explainer — Launching Soon</title>
+    <link rel="icon" href="/huh-logo.png" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="site-header">
+        <a class="brand" href="#top" aria-label="Huh? home">
+          <img src="/huh-logo.png" alt="" width="58" height="58" />
+          <span>HUH?</span>
+        </a>
+        <div class="launch-chip"><span class="pulse" aria-hidden="true"></span> LAUNCH MODE</div>
+        <button class="button button-small js-open-waitlist" type="button">JOIN WAITLIST ↗</button>
+      </header>
+
+      <main id="top">
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <p class="eyebrow">THE “WAIT, WHAT?” BUTTON FOR YOUTUBE</p>
+            <h1 id="hero-title"><span class="huh-word">HUH?</span><br />VIDEO<br /><span class="explainer-word">EXPLAINER</span></h1>
+            <p class="hero-description">Stuck on a confusing moment? Click once. Get the surrounding context explained in plain language—without leaving the video.</p>
+            <div class="hero-actions">
+              <button class="button button-primary js-open-waitlist" type="button">GET LAUNCH ACCESS →</button>
+              <span class="no-spam">NO SPAM.<br />ONE LAUNCH EMAIL.</span>
+            </div>
+          </div>
+
+          <aside class="countdown-card" aria-labelledby="countdown-title">
+            <div class="card-sticker">48 HOUR COUNTDOWN</div>
+            <p id="countdown-title" class="countdown-kicker">LAUNCHING IN</p>
+            <div class="countdown" role="timer" aria-live="off" aria-label="Time remaining until launch">
+              <div class="time-block"><strong id="hours">48</strong><span>HOURS</span></div>
+              <div class="time-separator" aria-hidden="true">:</div>
+              <div class="time-block"><strong id="minutes">00</strong><span>MINUTES</span></div>
+              <div class="time-separator" aria-hidden="true">:</div>
+              <div class="time-block"><strong id="seconds">00</strong><span>SECONDS</span></div>
+            </div>
+            <div class="launch-date">
+              <span>DROP DATE</span>
+              <strong id="launch-date-label">01 SEP 2026 · 8:06 PM IST</strong>
+            </div>
+            <div class="fake-player" aria-hidden="true">
+              <div class="fake-screen"><span>“WHAT DID THEY MEAN?”</span></div>
+              <div class="fake-controls"><span class="play">▶</span><span class="timeline"></span><span class="huh-pill">HUH?</span></div>
+            </div>
+          </aside>
+        </section>
+
+        <div class="marquee" aria-hidden="true">
+          <div>PAUSE IT ★ ASK IT ★ GET IT ★ SAVE IT ★ PAUSE IT ★ ASK IT ★ GET IT ★ SAVE IT ★</div>
+        </div>
+
+        <section class="how-it-works" aria-labelledby="how-title">
+          <div class="section-heading">
+            <p class="eyebrow">CONFUSION, INTERRUPTED.</p>
+            <h2 id="how-title">THREE STEPS.<br />ZERO RABBIT HOLES.</h2>
+          </div>
+          <div class="steps">
+            <article class="step step-cyan"><span>01</span><h3>PAUSE</h3><p>Stop at the exact second that stopped making sense.</p></article>
+            <article class="step step-purple"><span>02</span><h3>ASK “HUH?”</h3><p>One click reads the nearby captions—not your entire watch history.</p></article>
+            <article class="step step-yellow"><span>03</span><h3>UNDERSTAND</h3><p>Get a simple explanation, example, and why the idea matters.</p></article>
+          </div>
+        </section>
+
+        <section class="final-cta">
+          <div>
+            <p class="eyebrow">BE FIRST IN LINE</p>
+            <h2>MAKE EVERY<br />“HUH?” CLICK.</h2>
+          </div>
+          <button class="button button-primary button-giant js-open-waitlist" type="button">JOIN THE WAITLIST →</button>
+        </section>
+      </main>
+
+      <footer>
+        <span>© 2026 HUH? VIDEO EXPLAINER</span>
+        <a href="https://github.com/Vidhanvyrs/Huh/blob/master/PRIVACY_POLICY.md" target="_blank" rel="noreferrer">PRIVACY ↗</a>
+        <span>BUILT FOR CURIOUS MINDS.</span>
+      </footer>
+    </div>
+
+    <dialog id="waitlist-dialog" aria-labelledby="waitlist-title">
+      <div class="dialog-shell">
+        <button id="close-dialog" class="dialog-close" type="button" aria-label="Close waitlist form">×</button>
+        <p class="eyebrow">EARLY ACCESS // 001</p>
+        <h2 id="waitlist-title">DON’T MISS<br />THE DROP.</h2>
+        <p class="dialog-intro">Leave your details. We’ll send one email when Huh? goes live.</p>
+        <form id="waitlist-form" novalidate>
+          <label for="name">YOUR NAME</label>
+          <input id="name" name="name" type="text" autocomplete="name" minlength="2" maxlength="100" placeholder="ADA LOVELACE" required />
+          <label for="email">YOUR EMAIL</label>
+          <input id="email" name="email" type="email" autocomplete="email" maxlength="254" placeholder="ADA@EXAMPLE.COM" required />
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+          <button id="submit-waitlist" class="button button-primary button-submit" type="submit">PUT ME ON THE LIST →</button>
+        </form>
+        <p class="privacy-note">By joining, you agree to receive the Huh? launch email. Unsubscribe anytime.</p>
+      </div>
+    </dialog>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
