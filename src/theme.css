@@ -1,0 +1,11 @@
+:root {
+    --ink: #111515;
+    --ink-rgb: 17, 21, 21;
+    --paper: #f4f1e8;
+    --white: #fffef8;
+    --acid: #eaff00;
+    --orange: #ff542e;
+    --purple: #dca0ff;
+    --cyan: #9ee7ff;
+    --border: 3px solid var(--ink);
+}
