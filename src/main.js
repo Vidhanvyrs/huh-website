@@ -1,5 +1,5 @@
 import './styles.css';
-import { formatUnit, getCountdown } from './countdown';
+import { formatLaunchLabel, formatUnit, getCountdown } from './countdown';
 import { WaitlistError, createWaitlistClient } from './waitlist';
 
 const DEFAULT_LAUNCH_AT = '2026-09-01T20:06:00+05:30';
@@ -14,6 +14,9 @@ const minutes = document.querySelector('#minutes');
 const seconds = document.querySelector('#seconds');
 const launchChip = document.querySelector('.launch-chip');
 const countdownKicker = document.querySelector('.countdown-kicker');
+const launchDateLabel = document.querySelector('#launch-date-label');
+
+launchDateLabel.textContent = formatLaunchLabel(launchAt);
 
 const renderCountdown = () => {
     const countdown = getCountdown(launchAt);
