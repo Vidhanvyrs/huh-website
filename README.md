@@ -5,7 +5,7 @@ A standalone brutalist launch page for Huh? Video Explainer, with a fixed 48-hou
 ## Setup
 
 1. Run `supabase/schema.sql` in the Huh? Supabase project SQL Editor.
-2. Copy `.env.example` to `.env.production` and fill in the project URL and public anon key.
+2. Copy `.env.example` to `.env.local` and fill in the project URL and public anon key. Vite loads this file for both local development and production builds.
 3. Install and run:
 
 ```bash
