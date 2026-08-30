@@ -5,8 +5,8 @@ import { WaitlistError, createWaitlistClient } from './waitlist';
 const DEFAULT_LAUNCH_AT = '2026-09-01T20:06:00+05:30';
 const launchAt = import.meta.env.VITE_LAUNCH_AT || DEFAULT_LAUNCH_AT;
 const waitlist = createWaitlistClient({
-    supabaseUrl: import.meta.env.VITE_SUPABASE_URL,
-    anonKey: import.meta.env.VITE_SUPABASE_ANON_KEY,
+    supabaseUrl: __SUPABASE_URL__,
+    anonKey: __SUPABASE_ANON_KEY__,
 });
 
 const hours = document.querySelector('#hours');
